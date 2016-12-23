@@ -1,0 +1,162 @@
+@import "normalize";
+@import "layout";
+@import "slick";
+// @import "slick-theme";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+body{
+	color: #303030;
+	font: 600 18px/1.3 'Poppins', Arial, sans-serif;
+	text-align: center;
+	background-color: #FDFDFD;
+}
+
+/* Layout */
+.ba-container{
+	text-transform: uppercase;
+	max-width: 1220px;
+	padding: 20px 20px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+	color: #fff;
+	text-decoration: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+.ba-menu a:focus{
+
+}
+
+.ba-button__slider:focus{
+	background-color:#6319c8;
+	font-weght: 600;
+	font-size: 16px;
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-title{
+	font-size: 86px;
+	font-weight: 600;
+	margin: 0;
+	padding: 30px 0 115px;
+	line-height: 1.1;
+	&::before{
+		content:" ";
+		background-image: url('../img/triangle.png');
+
+	}
+}
+.ba-work {
+	display: inline-block;
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+	& img{
+		display: block;
+	}
+	&__text{
+			padding: 272px 110px 50px 30px;
+			text-align: left;
+		&--main{
+			font-size: 28px;
+			font-weight: 600;
+			margin: 0;
+		}
+		&--submain{
+			font-size: 12px;
+		}
+	}
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top:0;
+		right: 0;
+		bottom: 0;
+		background:rgba(50,232,172,.6);
+		opacity: 0;
+		transition: opacity .3s ease-in;
+		margin-left: 70px
+	}
+}
+.ba-img img,
+{
+	margin-left: 70px;
+}
+.ba-work:hover .ba-work__overlay{
+	opacity: 1;
+}
+
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	background: none;
+	border: none;
+	font-size: 0;
+	width: 96px;
+	height: 96px;
+	outline: none;
+	display: flex;
+}
+.slick-prev{
+	background-image:  url('../img/leftarrow.png');
+	background-color: transparent;
+	left: 0;
+	margin-left: -70px;
+}
+.slick-next{
+	background-image:  url('../img/right.png');
+	right: 0;
+	background-color: transparent;
+	margin-right: -115px;
+}
+
